@@ -1,0 +1,628 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+$museum-link-red: #D01031;
+$dark-graybox: #C4C5C4;
+$light-graybox: #EAE9EA;
+$light-gray-font:#8B898A;
+$footer-link: #52D4FF;
+$open-sans-font: 'Open Sans', Helvetica, sans-serif;
+
+$width-ipad:768px;
+$width-laptop-small:1000px;
+$width-laptop-large:1200px;
+
+body {
+
+	font-size: 14px;
+	font-family: Georgia, Arial, sans-serif;
+	line-height: 1.5;
+	padding: 0 5px 0 5px;
+
+	a {
+		color:$museum-link-red;
+	}
+}
+
+.wrapper {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1600px;
+	padding: 0 1rem;
+	width: 100%;
+}
+
+.hide-text {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.button {
+	background-color: $museum-link-red;
+	border: none;
+	border-radius: 3px;
+	color:white;
+	font-family: Georgia, sans-serif;
+	font-size: 15px;
+	padding: 8px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	width:100%;
+}
+
+/*.bodyform {
+	.regbutton button {
+		width:100%;
+	}
+}*/
+
+h2 {
+	font-family: $open-sans-font;
+	font-weight: bold;
+
+
+}
+
+h3 {
+	font-family: $open-sans-font;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+ul.bulletlist {
+
+	li {
+
+		background-image: url(../../imgs/museum/bullet.png);
+		background-position: left 1rem;
+		background-repeat: no-repeat;
+		list-style-position: inside;
+		padding: 7px 0 7px 15px;
+
+	}
+
+}
+
+header {
+
+	padding: 2rem 0 .5rem;
+
+
+	.logo-searchbar {
+
+		content: "";
+		clear: both;
+		display: table;
+		margin-bottom: 2rem;
+		width: 100%;
+
+
+		h1 {
+			float:none;
+			display:block;
+
+			/*float: left;*/
+
+			a {
+
+				background-image: url(../../imgs/museum/museumlogo.jpg);
+				background-position: center;
+				background-size: contain;
+				display: block;
+				height: 105px;
+				width: 381px;
+
+			}
+
+		}
+
+		
+		
+	}
+
+}
+.searchbox-mobileonly {
+	background-color: $light-graybox;
+	padding: 25px;
+
+	.searchbox-text {
+		margin-bottom: 10px;
+	}
+
+
+}
+
+.searchbox-desktop {
+	display:none;
+}
+
+form.searchbox {
+	clear:both;
+	margin-top: 2.75rem;
+	padding-bottom: 25px;
+
+	.searchbox-text {
+		border-radius: 3px;
+		box-sizing: border-box;
+		padding: 8px;
+		width:100%;
+	}
+
+
+}
+.mobilehr {
+	margin-top: 3rem;
+
+}
+.navbarlinks {
+	border-radius: 3px;
+	border: 1px solid $dark-graybox;
+	clear:both;
+	font-size:20px;
+	text-align:center;
+
+	a {
+		border-bottom: 1px solid $dark-graybox;
+		color: $museum-link-red;
+		display: block;
+		font-family: georgia, sans-serif;
+		font-size: 15px;
+		padding: 20px;
+		text-decoration: none;
+
+	}
+
+	a:last-child {
+		border-bottom:none;
+	}
+
+}
+
+.banner {
+	color: black;
+	margin-bottom: 1rem;
+	padding:10px;
+	text-align: center;
+	/*text-shadow: 1px 2px 0 black;*/
+	word-spacing: 2px;
+	text-align: left;
+
+
+	h2 {
+		font-size: 60px;
+		line-height: 70px;
+		margin-bottom: 10px;
+		padding-top:3rem;
+
+	}
+	
+
+	
+
+	h3 {
+
+		color: $light-gray-font;
+		font-size: 22px;
+		font-weight:bold;
+		line-height: 5rem;
+		padding-bottom: 3rem;
+		word-spacing: 5px;
+
+		ul li{
+			font-size: 16px;
+		}
+		a {
+			color:$museum-link-red;
+		}
+	}
+}
+
+
+
+.benefitslist {
+
+	h3 {
+		font-size: 2.5em;
+		margin-bottom: .6rem;
+		padding: .5rem 0;
+		font-weight: bold;
+	}
+
+}
+.bulletlist {
+	font-size:18px;
+}
+
+.benefitslisthr {
+	margin-bottom: 4em;
+	margin-top: 4em;
+}
+
+.bottomcolumns {
+
+	div {
+		float:none;
+		width: 100%;
+
+
+	}
+
+
+}
+
+.twocolumns {
+	margin-top: .5rem;
+	margin-bottom: 4rem;
+}
+
+
+
+
+.bodyform {
+
+	background-color: $light-graybox;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 20px;
+
+	input[type="text"] {
+		display:block;
+		width:100%;
+		border-radius: 5px;
+		height:30px;
+		box-shadow: -2px -5px $light-graybox;
+
+
+	}
+
+	label {
+		display: block;
+		padding: 10px 0;
+
+
+	}
+	h3 {
+		margin:0;
+
+	}
+
+}
+
+
+.memberBoxes {
+	background-color: $dark-graybox;
+	overflow: hidden;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-bottom:10px;
+	margin-top: 1rem;
+
+	.memberBoxes-column {
+		background-color:white;
+		border: 3px solid $dark-graybox;
+		border-radius: 8px;
+		box-sizing: border-box;
+		padding:.5rem;
+
+		
+		h4 {
+			
+			font-family: $open-sans-font;
+			font-size: 1.1rem;
+			font-weight: bold;
+			margin: 1rem 0;
+			text-align: center;
+
+
+		}
+
+	}
+
+}
+.bottomcolumns {
+	margin-top: 2rem;
+}
+
+aside {
+
+	border-top: 1px solid #ccc;
+	clear:both;
+
+	div{
+		box-sizing: border-box;
+		float:left;
+		margin-bottom: 1.5rem;
+		margin-top: 2rem;
+		width:100%;
+
+
+		h3 {
+			margin-bottom: 1.5rem;
+		}
+
+		ul {
+
+			li {
+				list-style-type: none;
+				margin-bottom: .5rem;
+			
+
+
+				a {
+
+					color: $museum-link-red;
+
+				}
+
+			}
+
+		}
+	
+	}
+
+}
+
+footer {
+	background-color: black;
+	clear: both;
+	color:white;
+	padding:40px;
+	text-align: center;
+	font-size:18px;
+
+
+		p {
+			span {
+				display:block;
+
+
+			}
+			span:last-child {
+				padding-bottom: 5px;
+				margin-bottom: 2rem;
+			}
+		}
+
+	.footernavbar {
+
+
+		text-align: center;
+
+		a {
+			color: $footer-link;
+
+
+		}
+		li {
+			display: inline-block;
+			list-style-type: none;
+
+			padding: 0px 10px;
+  			word-wrap: normal;
+		}
+	}
+}
+
+
+
+/*Ipad*/
+
+@media  (min-width: $width-ipad) {
+
+
+	header .logo-searchbar form.searchbox {
+		
+
+		.searchbox-text {
+
+			float:left;
+			width:75%;
+
+		}
+
+		.searchbox-submit{
+			width:25%;
+		}
+	}
+
+	.banner h3 {
+		color: gray;
+	}
+
+	aside {
+
+		margin-top: 4em;
+		padding-top: 2rem;
+		padding-left: 1rem;
+
+	}
+
+	.navbarlinks {
+	border-radius: 3px;
+	border: 1px solid $dark-graybox;
+	clear:both;
+	font-size:20px;
+	text-align:center;
+
+	a {
+		border-bottom: 1px solid $dark-graybox;
+		color: $museum-link-red;
+		display: block;
+		font-family: georgia, sans-serif;
+		font-size: 15px;
+		padding: 20px;
+		text-decoration: none;
+
+	}
+
+	a:last-child {
+		border-bottom:none;
+	}
+
+}
+	.navbarlinks {
+
+			a {
+				display:inline-block;
+				border-bottom:none;
+			}
+	}
+
+
+	.memberBoxes {
+
+		.memberBoxes-column {
+			float:left;
+			width: 33%;
+		}
+	}
+
+	.twocolumns {
+
+		.twocolumns-column {
+			float:left;
+			width: 48%;
+			box-sizing: border-box;
+			padding: 10px 0;
+
+			&:nth-child(1) {
+			
+				margin-right: 2%;
+
+			}
+
+		}
+	}
+	.bottomcolumns {
+		div {
+			box-sizing: border-box;
+			float:left;
+			padding:1rem;
+			width: 50%;
+
+		}
+	}
+	.bodyform {
+
+	
+		.regbutton {
+			float:right;
+			button {
+				float:right;
+				width:auto;
+
+			}
+		}
+	}
+}
+/*laptop small*/
+
+@media (min-width: $width-laptop-small){
+	
+	header .logo-searchbar h1 {
+    float: left;
+	}
+	.mobilehr {
+		display:none;
+	}
+
+	.banner {
+		background-image: url("../../imgs/museum/museumbanner.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.banner h3 {
+		color: #fff;
+	}
+
+	.navbarlinks a {
+		padding:30px;
+		display:inline-block;
+
+	}
+
+	header .logo-searchbar form.searchbox {
+		clear:none;
+		float:right;
+
+		.searchbox-text {
+			float:left;
+			width:auto;
+
+		}
+
+		.searchbox-submit {
+			width:auto;
+		}
+	}
+	.banner {
+	color: #fff;
+	margin-bottom: 3rem;
+	text-align: center;
+	text-shadow: 1px 2px 0 black;
+	word-spacing: 2px;
+}
+	.bodyform {
+    background-color: #EAE9EA;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 2rem 0;
+}
+	h2 {
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 10px;
+		padding-top:5rem;
+
+		}
+
+	.searchbox-mobileonly {
+		display:none;
+		
+	}
+	.searchbox-desktop {
+		display:block;
+	}
+.navbarlinks {
+	word-spacing: 1rem;
+	font-size: 45px;
+}
+}
+
+/*laptop large only!*/
+
+@media (min-width: $width-laptop-large){
+	
+	
+
+	article, aside {
+
+		box-sizing: border-box;
+		float:left;
+
+	}
+
+	article {
+		margin-right: 5%;
+		width:70%;
+	}
+
+	aside {
+		border-left: 1px solid black;
+		border-top: 0;
+		clear:none;
+		padding-left: 3rem;
+		width: 25%;
+
+		div {
+			float:none;
+			width: 100%;
+
+		}
+	}
+
+}
+

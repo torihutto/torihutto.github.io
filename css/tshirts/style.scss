@@ -1,0 +1,260 @@
+@import 'reset';
+
+@import 'variables';
+
+@import 'mixins';
+
+
+
+h1{
+			float:none;
+			display:block;
+
+			a {
+
+				background-image: url('../../imgs/tshirts/Tailoredtees.png');
+				background-position: center;
+				display:block;
+
+
+			}
+
+		}
+body {
+	background-color: #e6f5ff;
+}
+	/*.hide-text {
+		font-family: Helvetica, sans-serif;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		font-size: 50px;
+	}*/
+
+.navbarlinks {
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: Arial, sans-serif;
+	background-color: #666;
+
+
+}
+.navbarlinks a {
+	color:#fff;
+	text-decoration: none;
+	padding:30px;
+	margin: 20px 0;
+
+}
+
+.main-container {
+
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    padding-top: 4rem;
+
+	.column {
+		box-sizing: border-box;
+		float:left;
+		padding: 15px;
+		width:33%;
+		background-color: #fff;
+	}
+
+}
+
+.box {
+
+	background-position: center 13px;
+	background-repeat: no-repeat;
+	background-size: 85%;
+	border: 3px solid $light-blue;
+	box-sizing: border-box;
+	height: 21rem;
+	position: relative;
+
+	&.box-blue-shirt {
+		background-image: url('../../imgs/tshirts/shirt_blue.jpg')
+	}
+
+	&.box-yellow-shirt {
+		background-image: url('../../imgs/tshirts/shirt_yellow.jpg')
+	}
+
+	&.box-pink-shirt {
+		background-image: url('../../imgs/tshirts/shirt_pink.jpg')
+	}
+
+
+}
+
+.icon-row {
+	background-color: #FFF;
+	border-top: 3px solid #5CA4D7;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.icon-row::after {
+	content: " ";
+	display:block;
+	height:0;
+	clear:both;
+
+}
+.icon-row a {
+	border-right: 3px solid $light-blue;	
+	box-sizing: border-box;
+	color:$light-blue;
+	display:block;
+	float:left;
+	font-size: 1.2rem;
+	padding:1rem;
+	text-align:center;
+	width:20%;
+	position:relative;
+
+
+}
+
+.icon-row a:last-child {
+	border-right: none;
+
+}
+.icon-row a:hover {
+	background-color: $light-blue;
+	color:#fff;
+	.popup {
+		visibility: visible;
+		opacity:1;
+		bottom: 100%;
+	}
+}
+
+.flip-button {
+	border: 3px solid $light-blue;
+	border-right:0px;
+	border-top: 0px;
+	color:$light-blue;
+	font-size: 20px;
+	padding:.5rem;
+	position:absolute;
+	right:0;
+	top:0;
+
+}
+.flip-button:hover {
+
+	background-color: $light-blue;
+	color:#fff;
+}
+
+h2 {
+	color: $light-blue;
+	font-size: 25px;
+	margin-top: 35px;
+}
+
+h2 span{
+	color: $light-blue;
+	float:right;
+	font-weight: bold;
+}
+
+.XL-button {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.box-pink-shirt .square-button {
+	color:$pink !important;
+	}
+.box-yellow-shirt .square-button {
+	color:$yellow !important;
+}
+
+.popup {
+	visibility: hidden;
+	opacity:0;
+	position:absolute;
+	background-color:#fff;
+	border: 3px solid $light-blue;
+	bottom:120%;
+	width:106%;
+	left:50%;
+	margin-left:-53%;
+	transition: all .5s;
+
+}
+.popup:before, .popup:after {
+	content: " ";
+	border-style: solid;
+	position: absolute;
+	top:100%;
+	left: 50%;
+	width:0;
+	height:0;
+	border-color: transparent;
+}
+.popup:after {
+	border-width: 12px;
+	border-top-color:#fff;
+	margin-left: -12px;	
+}
+.popup:before {
+	border-top-color: $light-blue;
+	border-width: 15px;
+	margin-left: -15px;
+
+}
+
+.popup .popup-squares {
+	position:relative;
+}
+
+	
+	
+
+.blue-square {
+	color:$light-blue;
+	
+
+}
+
+.pink-square {
+	color:$pink;
+	
+
+}
+
+.yellow-square {
+	color:$yellow;
+	
+	
+
+	
+}
+
+.green-square {
+	color:$green;
+
+}
+.container-sizes-size {
+	position:relative;
+
+}
+
+.container-sizes-size-letter {
+	color:$light-blue;
+	position:absolute;
+	
+}
+
+
+
+
+
+
