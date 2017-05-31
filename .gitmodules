@@ -1,0 +1,3 @@
+[submodule "monstermaker"]
+	path = monstermaker
+	url = https://github.com/torihutto/monstermaker.git

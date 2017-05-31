@@ -128,7 +128,7 @@ a:hover {
 	padding-top: 75px;
 	/*padding-bottom: 25px;*/
 }
-.sectionTitle h1 {
+.sectionTitle h2 {
   	letter-spacing: 1px;
   	font-size: 35px;
   	font-weight: 600;
@@ -140,6 +140,7 @@ a:hover {
   	font-weight: 400;
   	text-transform: uppercase;
   	padding-bottom: 5px;
+    font-family: 'BrandonTextBold', serif;
 }
 .sectionTitle p {
   	font-size: 18px;
